@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x0" bd:device="xc7a35tcpg236-1" bd:synthFlowMode="Hierarchical" bd:tool_version="2017.2" bd:top="M2JustForFun" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>M2JustForFun</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="M2JustForFun_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>CLK</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>START</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>CLKSTART</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>RST</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Y0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Y1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Y2</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Y3</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>PlusOne</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>M2JustForFun_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>D01</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="d_flipflop_set_reset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_d_flipflop_set_reset_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>D2START</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="d_flipflop_set_reset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_D01_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_and2_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_and2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_xup_and2_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_or2_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_or2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_xup_or2_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_xor2_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_xor2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_xup_xor2_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_and2_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_and2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_xup_and2_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_xor2_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_xor2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_xup_xor2_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>GenS</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_and3" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_xup_and3_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>InvS</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_inv" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_xup_inv_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>GenY1</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_and2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_xup_and2_2_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>GenY2</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_and2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_xup_and2_2_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>GenY0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_and2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_xup_and2_2_2</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>VDD</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">M2JustForFun_xlconstant_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>xup_and2_0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_and2_0" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="xup_or2_0" spirit:portRef="b"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_or2_0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_or2_0" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="D01" spirit:portRef="D1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_xor2_0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_0" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="D01" spirit:portRef="D2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>D2START_q1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="D2START" spirit:portRef="q1"/>
+        <spirit:internalPortReference spirit:componentRef="xup_and2_0" spirit:portRef="a"/>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_1" spirit:portRef="a"/>
+        <spirit:internalPortReference spirit:componentRef="GenS" spirit:portRef="a"/>
+        <spirit:internalPortReference spirit:componentRef="GenY2" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>D01_q2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="D01" spirit:portRef="q2"/>
+        <spirit:internalPortReference spirit:componentRef="xup_and2_0" spirit:portRef="b"/>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_0" spirit:portRef="b"/>
+        <spirit:internalPortReference spirit:componentRef="xup_and2_1" spirit:portRef="b"/>
+        <spirit:internalPortReference spirit:componentRef="GenS" spirit:portRef="c"/>
+        <spirit:internalPortReference spirit:componentRef="GenY1" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>D01_q1_n</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="D01" spirit:portRef="q1_n"/>
+        <spirit:internalPortReference spirit:componentRef="xup_or2_0" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>D01_q1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="D01" spirit:portRef="q1"/>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_0" spirit:portRef="a"/>
+        <spirit:internalPortReference spirit:componentRef="xup_and2_1" spirit:portRef="a"/>
+        <spirit:internalPortReference spirit:componentRef="GenS" spirit:portRef="b"/>
+        <spirit:internalPortReference spirit:componentRef="GenY0" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_and2_1_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_and2_1" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_1" spirit:portRef="b"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_xor2_1_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_1" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="D2START" spirit:portRef="D1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_and3_0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="GenS" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="InvS" spirit:portRef="a"/>
+        <spirit:externalPortReference spirit:portRef="Y3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_inv_0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="InvS" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="GenY0" spirit:portRef="b"/>
+        <spirit:internalPortReference spirit:componentRef="GenY1" spirit:portRef="b"/>
+        <spirit:internalPortReference spirit:componentRef="GenY2" spirit:portRef="b"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CLK_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="CLK"/>
+        <spirit:internalPortReference spirit:componentRef="D01" spirit:portRef="clk2"/>
+        <spirit:internalPortReference spirit:componentRef="D2START" spirit:portRef="clk1"/>
+        <spirit:internalPortReference spirit:componentRef="D01" spirit:portRef="clk1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>START_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="START"/>
+        <spirit:internalPortReference spirit:componentRef="D2START" spirit:portRef="D2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CLKSTART_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="CLKSTART"/>
+        <spirit:internalPortReference spirit:componentRef="D2START" spirit:portRef="clk2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>VDD_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="VDD" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="D01" spirit:portRef="clr1_n"/>
+        <spirit:internalPortReference spirit:componentRef="D01" spirit:portRef="pr2_n"/>
+        <spirit:internalPortReference spirit:componentRef="D2START" spirit:portRef="pr1_n"/>
+        <spirit:internalPortReference spirit:componentRef="D2START" spirit:portRef="pr2_n"/>
+        <spirit:internalPortReference spirit:componentRef="D2START" spirit:portRef="clr2_n"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>RST_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="RST"/>
+        <spirit:internalPortReference spirit:componentRef="D01" spirit:portRef="pr1_n"/>
+        <spirit:internalPortReference spirit:componentRef="D01" spirit:portRef="clr2_n"/>
+        <spirit:internalPortReference spirit:componentRef="D2START" spirit:portRef="clr1_n"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>GenY0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="GenY0" spirit:portRef="y"/>
+        <spirit:externalPortReference spirit:portRef="Y0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>GenY1_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="GenY1" spirit:portRef="y"/>
+        <spirit:externalPortReference spirit:portRef="Y1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>GenY2_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="GenY2" spirit:portRef="y"/>
+        <spirit:externalPortReference spirit:portRef="Y2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>D2START_q2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="D2START" spirit:portRef="q2"/>
+        <spirit:externalPortReference spirit:portRef="PlusOne"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

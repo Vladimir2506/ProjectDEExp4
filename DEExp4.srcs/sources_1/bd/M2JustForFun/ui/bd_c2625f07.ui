@@ -1,0 +1,49 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port RST -pg 1 -y -230 -defaultsOSRD
+preplace port START -pg 1 -y -150 -defaultsOSRD
+preplace port CLK -pg 1 -y -290 -defaultsOSRD
+preplace port PlusOne -pg 1 -y -580 -defaultsOSRD
+preplace port Y0 -pg 1 -y -660 -defaultsOSRD
+preplace port Y1 -pg 1 -y -640 -defaultsOSRD
+preplace port Y2 -pg 1 -y -620 -defaultsOSRD
+preplace port Y3 -pg 1 -y -600 -defaultsOSRD
+preplace port CLKSTART -pg 1 -y -180 -defaultsOSRD
+preplace inst InvS -pg 1 -lvl 3 -y -160 -defaultsOSRD
+preplace inst xup_xor2_0 -pg 1 -lvl 4 -y -190 -defaultsOSRD
+preplace inst xup_xor2_1 -pg 1 -lvl 4 -y -450 -defaultsOSRD
+preplace inst D2START -pg 1 -lvl 2 -y -230 -defaultsOSRD
+preplace inst VDD -pg 1 -lvl 1 -y -350 -defaultsOSRD
+preplace inst GenY0 -pg 1 -lvl 3 -y -280 -defaultsOSRD
+preplace inst xup_or2_0 -pg 1 -lvl 4 -y -80 -defaultsOSRD
+preplace inst GenY1 -pg 1 -lvl 3 -y -20 -defaultsOSRD
+preplace inst GenS -pg 1 -lvl 3 -y -430 -defaultsOSRD
+preplace inst xup_and2_0 -pg 1 -lvl 4 -y 50 -defaultsOSRD
+preplace inst D01 -pg 1 -lvl 2 -y 20 -defaultsOSRD
+preplace inst GenY2 -pg 1 -lvl 3 -y 90 -defaultsOSRD
+preplace inst xup_and2_1 -pg 1 -lvl 4 -y -340 -defaultsOSRD
+preplace netloc GenY2_y 1 3 2 760J -620 N
+preplace netloc START_1 1 0 2 0J -160 N
+preplace netloc CLK_1 1 0 2 NJ -290 180
+preplace netloc D2START_q1 1 2 2 480 -500 740
+preplace netloc D2START_q2 1 2 3 460 -580 NJ -580 NJ
+preplace netloc xup_xor2_1_y 1 1 4 200J -520 NJ -520 NJ -520 960
+preplace netloc D01_q1 1 2 2 470 -350 770
+preplace netloc D01_q1_n 1 2 2 500 -90 NJ
+preplace netloc xup_xor2_0_y 1 1 4 190J -100 NJ -100 730 -20 950
+preplace netloc D01_q2 1 2 2 490 -340 700
+preplace netloc xup_or2_0_y 1 1 4 200J 150 NJ 150 NJ 150 960
+preplace netloc xup_inv_0_y 1 2 2 510 -110 690
+preplace netloc CLKSTART_1 1 0 2 0J -220 N
+preplace netloc GenY1_y 1 3 2 720J -640 N
+preplace netloc xup_and3_0_y 1 2 3 500 -510 750 -600 NJ
+preplace netloc VDD_dout 1 1 1 160
+preplace netloc RST_1 1 0 2 NJ -230 170
+preplace netloc xup_and2_0_y 1 3 2 770 -10 950
+preplace netloc GenY0_y 1 3 2 710J -660 N
+preplace netloc xup_and2_1_y 1 3 2 770 -510 950
+levelinfo -pg 1 -20 90 340 600 860 990 -top -680 -bot 360
+",
+}
+0
